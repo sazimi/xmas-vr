@@ -1,0 +1,17 @@
+{
+  "hosting": [
+    {
+      "app": {
+        "project": "xmas-vr",
+        "target": "build",
+        "configuration": "production",
+        "path": "dist/xmas-vr"
+      },
+      "azureHosting": {
+        "subscription": "68960f4c-8fa8-4ea9-95f4-41426dea5d5b",
+        "resourceGroupName": "xmas-vr-static-deploy",
+        "account": "xmasvrstatic"
+      }
+    }
+  ]
+}

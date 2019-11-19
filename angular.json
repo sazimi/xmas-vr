@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "scss"
         }
       },
       "root": "",
@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -93,7 +93,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -122,8 +122,25 @@
               "devServerTarget": "xmas-vr:serve:production"
             }
           }
+        },
+        "azureLogout": {
+          "builder": "@azure/ng-deploy:logout"
+        },
+        "deploy": {
+          "builder": "@azure/ng-deploy:deploy",
+          "options": {
+            "host": "Azure",
+            "type": "static",
+            "config": "azure.json"
+          }
         }
       }
-    }},
-  "defaultProject": "xmas-vr"
+    }
+  },
+  "defaultProject": "xmas-vr",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

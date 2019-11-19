@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { GiftComponent } from './gift/gift.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GiftComponent
   ],
   imports: [
     BrowserModule
