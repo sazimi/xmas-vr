@@ -12,8 +12,7 @@ import {
   Texture,
   Mesh,
   ParticleSystem,
-  Color4,
-  CubeTexture
+  Color4
 } from "@babylonjs/core";
 import { Gift } from './gift';
 
