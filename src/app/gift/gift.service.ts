@@ -73,7 +73,7 @@ export class GiftService {
     );
 
     // This can be passed to component
-    camera.setPosition(new Vector3(0, 0, 20));
+    camera.setPosition(new Vector3(0, -3, -16));
 
     camera.attachControl(canvas.nativeElement, true);
 
